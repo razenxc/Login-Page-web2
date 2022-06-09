@@ -1,10 +1,10 @@
 body {
     margin: 0;
-    background: #fff;
+    background: #150b26;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 1.5;
-    color: black;
+    color: white;
 }
 
 *, 
@@ -13,21 +13,23 @@ body {
     box-sizing: border-box;
 }
 
-.container {
+.page {
     width: 100%;
-    max-width: 1080px;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
-.section {
-    padding: 100px 0;
-}
+/* .section {
+
+} */
 
 /* Login */
 .login {
-    position: absolute;
-    width: 50%;
-    padding: 0 100px;
+    max-width: 50%;
+    margin-left: 110px;
+    margin-top: 100px;
+    margin-right: 120px;
 }
 
 .login_header {
@@ -46,13 +48,13 @@ body {
 }
 
 .login_subtitle {
-    color: #636364;
+    color: white;
     font-size: 14px;
     font-weight: 400;
 }
 /* Enter email */
 .enter_email_text {
-    color: black;
+    color: white;
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 6px;
@@ -63,8 +65,8 @@ body {
     width: 310px;
     height: 40px;
     border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
-
+    border-radius: 25px;
+    
     font-weight: 300;
     font-size: 14px;
     line-height: 21px;
@@ -73,7 +75,7 @@ body {
 }
 /* Enter Password */
 .enter_password_text {
-    color: black;
+    color: white;
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 6px;
@@ -84,7 +86,7 @@ body {
     width: 310px;
     height: 40px;
     border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
+    border-radius: 25px;
 
     font-weight: 300;
     font-size: 14px;
@@ -109,7 +111,7 @@ body {
 }
 
 .footer_rememberme {
-    color: black;
+    color: white;
     font-size: 12px;
     font-weight: 500;
     margin-right: 79.52px;
@@ -117,7 +119,7 @@ body {
 
 .footer_forgotpassword {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 /* Footer Button */
 .footer_signin {
@@ -127,52 +129,81 @@ body {
 .footer_signin--button {
     width: 313.97px;
     height: 41.31px;
-    background: linear-gradient(180deg, #FCE570 0%, #EC8206 100%);
-    box-shadow: 0px 4px 10px rgba(233, 68, 75, 0.25);
-    border-radius: 12px;
+    /* background: linear-gradient(180deg, #fe5c2e 0%, #b00172 100%); */
+    background: #aa0146;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.25);
+    border-radius: 25px;
     border: 0;
     cursor: pointer;
 
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 14px;
-    color: #fff;
-    margin-bottom: 11.36px;
+    color: #150b26;
+    margin-bottom: 15px;
+}
+
+.footer_signin--button:hover {
+    color: white;
+    background: #ad0171;
+    /* background: linear-gradient(180deg, #1a6ffc 0%, #ab0bff 100%); */
 }
 
 .footer_signin--withg--button {
     width: 313.97px;
     height: 41.31px;
-    background: #fff;
-    border-radius: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: #150b26;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    cursor: pointer;
 
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 14px;
-    color: black;
-    margin-bottom: 15.72px;
+    color: white;
+    margin-bottom: 22px;
 }
 
-.fa-google {
-    font-size: 25px;
+.footer_signin--withg--button:hover {
+    background: white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
     color: black;
+}
+
+.footer--google_ico {
+    position: static;
+    width: 25px;
+    height: 25px;
+    color: white;
+    margin-top: 5px;
 }
 
 /* Footer */
 .footer_text {
     position: absolute;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 15px;
     line-height: 15px;
 
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #595959;
-    margin-left: 49px;
+    color: #ffffff;
+    /* margin-left: 49px; */
 }
 
 .footer_text--span {
-    color: #EC8206;
+    color: #fd5b2f;
+    text-decoration: none;
+}
+
+/* wall */
+.wall {
+    display: flex;
+    flex: 1 1 0;
+    /* flex-direction: row; */
+    position: static;
+    height: 100vh;
+    background: url(../img/wall.jpg) center no-repeat;
+    background-size: cover;
 }
