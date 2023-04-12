@@ -1,0 +1,15 @@
+{
+  "name": "web2",
+  "version": "1.0.0",
+  "description": "Login Page.\r https://razenxc.github.io/Login-Page-web2/",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
